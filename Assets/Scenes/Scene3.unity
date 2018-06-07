@@ -270,10 +270,10 @@ GameObject:
   - component: {fileID: 540670836}
   - component: {fileID: 540670835}
   - component: {fileID: 540670837}
+  - component: {fileID: 540670838}
   - component: {fileID: 540670840}
   - component: {fileID: 540670841}
   - component: {fileID: 540670842}
-  - component: {fileID: 540670838}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Player
