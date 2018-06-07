@@ -57,7 +57,7 @@ public class Playeraction : MonoBehaviour {
                 
             }
          
-            if (Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 anim.SetTrigger("SlideMotion");
 
