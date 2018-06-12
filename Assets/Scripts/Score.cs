@@ -7,7 +7,7 @@ public class Score : MonoBehaviour {
 
     private void Awake()
     {
-        score = 5;
+        score = 4;
     }
     // Use this for initialization
     void Start () {
