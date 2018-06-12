@@ -8,6 +8,7 @@ public class Playeraction : MonoBehaviour {
     public Sprite sliding;
     public int jumpCount = 2;  
     bool isGrounded ;
+    bool invincible=false;
     Animator anim;
     
 
@@ -56,7 +57,7 @@ public class Playeraction : MonoBehaviour {
                 }
                 
             }
-         
+       
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 anim.SetTrigger("SlideMotion");
@@ -74,9 +75,9 @@ public class Playeraction : MonoBehaviour {
             if (Input.GetKey(KeyCode.E)){
 
             }
-            else{
+            else
                 Score.score -= 1;
-            }
+           
             if (Score.score == 0){
                 // player object 파괴
                 Destroy(this.gameObject);

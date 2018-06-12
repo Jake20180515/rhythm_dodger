@@ -9,7 +9,7 @@ public class spawnManeger : MonoBehaviour {
     {
         if (enableSpawn)
         {
-            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector3(50f, 1.6f, 0f), Quaternion.identity);
+            GameObject enemy = (GameObject)Instantiate(Enemy, new Vector3(50f, 4.6f, 0f), Quaternion.identity);
         }
     }
 	// Use this for initialization
