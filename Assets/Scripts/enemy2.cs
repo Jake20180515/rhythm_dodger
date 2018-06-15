@@ -34,7 +34,7 @@ public class enemy2 : MonoBehaviour
 
         else if (timer >= 0.5)
         {
-            transform.localScale = new Vector3(4.17f, 20f, 0);
+            transform.localScale = new Vector3(4.17f, 15.8f, 0);
             //timer = 0;
         }
 
