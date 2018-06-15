@@ -28,13 +28,13 @@ public class enemy2 : MonoBehaviour
 
         if (timer >= 1)
         {
-            transform.localScale = new Vector3(1.399413f, 3.509718f, 0);
+            transform.localScale = new Vector3(4.17f, 5.43f, 0);
             timer = 0;
         }
 
         else if (timer >= 0.5)
         {
-            transform.localScale = new Vector3(1.399413f, 15f, 0);
+            transform.localScale = new Vector3(4.17f, 20f, 0);
             //timer = 0;
         }
 
