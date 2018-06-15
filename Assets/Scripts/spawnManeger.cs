@@ -5,6 +5,8 @@ using UnityEngine;
 public class spawnManeger : MonoBehaviour {
     public bool enableSpawn = false;
     public GameObject Enemy;
+    public GameObject Enemy1;
+    public GameObject Enemy2;
     void SpawnEnemy()
     {
         if (enableSpawn)
@@ -12,16 +14,34 @@ public class spawnManeger : MonoBehaviour {
             GameObject enemy = (GameObject)Instantiate(Enemy, new Vector3(50f, 4.6f, 0f), Quaternion.identity);
         }
     }
-	// Use this for initialization
-	void Start () {
+
+    void SpawnEnemy1()
+    {
+        if (enableSpawn)
+        {
+            GameObject enemy1 = (GameObject)Instantiate(Enemy1, new Vector3(50f, 4.6f, 0f), Quaternion.identity);
+        }
+    }
+
+    void SpawnEnemy2()
+    {
+        if (enableSpawn)
+        {
+            GameObject enemy2 = (GameObject)Instantiate(Enemy2, new Vector3(50f, 7f, 0f), Quaternion.identity);
+        }
+    }
+
+
+    // Use this for initialization
+    void Start () {
         Invoke("SpawnEnemy", 4.1f);
-        Invoke("SpawnEnemy", 5.4f);
-        Invoke("SpawnEnemy", 6.8f);
+        Invoke("SpawnEnemy1", 5.4f);
+        Invoke("SpawnEnemy2", 6.8f);
         Invoke("SpawnEnemy", 8.3f);
-        Invoke("SpawnEnemy", 9.6f);
-        Invoke("SpawnEnemy", 11f);
-        Invoke("SpawnEnemy", 12.4f);
-        Invoke("SpawnEnemy", 15.1f);
+        Invoke("SpawnEnemy2", 9.6f);
+        Invoke("SpawnEnemy1", 11f);
+        Invoke("SpawnEnemy1", 12.4f);
+        Invoke("SpawnEnemy2", 15.1f);
         Invoke("SpawnEnemy", 16.4f);
         Invoke("SpawnEnemy", 17.9f);
         Invoke("SpawnEnemy", 19.3f);

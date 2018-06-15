@@ -536,6 +536,7 @@ MonoBehaviour:
   jumpSpeed: 10
   sliding: {fileID: 21300000, guid: 63a546943b66d4c4f83334dc520a38aa, type: 3}
   jumpCount: 2
+  sr: {fileID: 0}
 --- !u!1 &610369273
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +638,7 @@ MonoBehaviour:
   jumpSpeed: 15
   sliding: {fileID: 21300000, guid: 63a546943b66d4c4f83334dc520a38aa, type: 3}
   jumpCount: 2
+  sr: {fileID: 0}
 --- !u!1 &899250901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableSpawn: 1
   Enemy: {fileID: 1241407426426608, guid: b54b1b9b2ba167e45bf9d4551185f904, type: 2}
+  Enemy1: {fileID: 1241407426426608, guid: 54d3b47ce1c9b0344abcadbfbdaa97a7, type: 2}
+  Enemy2: {fileID: 1847637092868932, guid: 21676184f892ac14eb45e4714dc38b0d, type: 2}
 --- !u!1 &1736659549
 GameObject:
   m_ObjectHideFlags: 0
