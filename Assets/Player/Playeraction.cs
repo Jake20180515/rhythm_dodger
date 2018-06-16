@@ -8,6 +8,14 @@ public class Playeraction : MonoBehaviour {
     public Sprite sliding;
     public int jumpCount = 2;  
     bool isGrounded ;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    
+=======
+    bool invincible=false;
+>>>>>>> 98ec01d5b144d7595f25ca78db06087118a8f391
+>>>>>>> parent of ef477d5... Revert "Merge branch 'master' of https://github.com/Jake20180515/rhythm_dodger"
     Animator anim;
     
 
@@ -56,7 +64,7 @@ public class Playeraction : MonoBehaviour {
                 }
                 
             }
-         
+       
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 anim.SetTrigger("SlideMotion");
@@ -66,11 +74,13 @@ public class Playeraction : MonoBehaviour {
    
     }
 
-
+    //bool iscol;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         if (collision.gameObject.tag == "Enemy")
         {
+<<<<<<< HEAD
             if (Input.GetKey(KeyCode.E)){
 
             }
@@ -78,10 +88,77 @@ public class Playeraction : MonoBehaviour {
                 Score.score -= 1;
             }
             if (Score.score == 0){
+=======
+<<<<<<< HEAD
+            Score.score -= 1;
+
+            if (Input.GetKey(KeyCode.E)){
+
+            }
+
+            if (Score.score == 0)
+            {
+=======
+            
+            if (Input.GetKey(KeyCode.E)){
+
+            }
+            else
+            {
+                Score.score -= 1;
+                Destroy(Score.herat_object[Score.score]);
+                Score.h_x -= 2;
+                //iscol = true;
+                StartCoroutine("colstop");
+            }
+
+
+            if (Score.score == 0){
+>>>>>>> 98ec01d5b144d7595f25ca78db06087118a8f391
+>>>>>>> parent of ef477d5... Revert "Merge branch 'master' of https://github.com/Jake20180515/rhythm_dodger"
                 // player object 파괴
                 Destroy(this.gameObject);
             }
         }
+        if (collision.gameObject.tag == "AddHeart")
+        {
+            if (Score.score < 5)
+            {
+                Score.herat_object[(Score.score)] = Instantiate(GameObject.Find("Heart"), new Vector3(Score.h_x, Score.h_y), Quaternion.identity) as GameObject;
+                Score.h_x += 2;
+                Score.score += 1;
+
+            }
+
+            collision.gameObject.transform.position = (new Vector3(100, 100, 0)); // 충돌 일어나면 다른 장소로 이동 -> 숨기기
+
+        }
+
+    }
+
+
+    /// <summary>
+    /// 피격시 반짝
+    /// </summary>
+    public SpriteRenderer sr;
+    IEnumerator colstop()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        int count = 0;
+        while (count < 10)
+        {
+            if (count % 2 == 0)
+                sr.color = new Color32(255, 255, 255, 60);
+            else
+                sr.color = new Color32(255, 255, 255, 255);
+
+            yield return new WaitForSeconds(0.1f);
+            count++;
+        }
+        sr.color = new Color32(255, 255, 255, 255);
+        //iscol = false;
+
+        yield return null;
     }
 
 }
