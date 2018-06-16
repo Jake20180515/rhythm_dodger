@@ -3,23 +3,27 @@ using UnityEngine;
 using System.Collections.Generic;
 
 public class Playeraction : MonoBehaviour {
-
+    public static float time;
     public float jumpSpeed = 15f;
     public Sprite sliding;
     public int jumpCount = 2;  
     bool isGrounded ;
+    
     Animator anim;
     
 
     void Start()
     {
         jumpCount = 0;
-       
         
+        time = 2f;
+        
+
+
     }
     void Awake()
     {
-
+   
         anim = gameObject.GetComponent<Animator>();
     }
 
@@ -63,7 +67,7 @@ public class Playeraction : MonoBehaviour {
 
             }
         }
-   
+        
     }
 
 
@@ -71,16 +75,18 @@ public class Playeraction : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            Score.score -= 1;
+
             if (Input.GetKey(KeyCode.E)){
 
             }
-            else{
-                Score.score -= 1;
-            }
-            if (Score.score == 0){
+
+            if (Score.score == 0)
+            {
                 // player object 파괴
                 Destroy(this.gameObject);
             }
+
         }
     }
 
