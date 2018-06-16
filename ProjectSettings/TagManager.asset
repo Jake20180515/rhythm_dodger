@@ -7,7 +7,6 @@ TagManager:
   - Enemy
   - ground
   - Ground
-  - AddHeart
   layers:
   - Default
   - TransparentFX
