@@ -6,7 +6,7 @@ public class enemy : MonoBehaviour
 {
 
     public Vector3 pos;
-    public float speed = 18f;
+    public float speed = 26f;
 
     private void Awake()
     {

@@ -6,7 +6,7 @@ public class enemy1 : MonoBehaviour
 {
 
     public Vector3 pos;
-    public float speed = 18f;
+    public float speed = 22f;
     public float s;
     // Use this for initialization
     void Start()

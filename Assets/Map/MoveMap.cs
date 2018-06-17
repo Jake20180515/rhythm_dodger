@@ -24,7 +24,7 @@ public class MoveMap : MonoBehaviour
 
     private Vector3 tempVec;
 
-    private float speed = 18f;
+    private float speed = 22f;
     private int lastTileNum = 0;
 
     private void Awake()
