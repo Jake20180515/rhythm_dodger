@@ -68,7 +68,7 @@ public class stage2Spawn : MonoBehaviour {
         Invoke("SpawnEnemy2", 7.7f);
         Invoke("SpawnEnemy", 8.7f);
         Invoke("SpawnEnemy3", 10.0f);
-        Invoke("SpawnEnemy0", 10.0f);
+        Invoke("SpawnEnemy", 10.0f);
         Invoke("SpawnEnemy", 11.2f);
         Invoke("SpawnEnemy4", 12.3f);
         Invoke("SpawnEnemy", 14.9f);

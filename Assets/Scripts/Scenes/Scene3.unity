@@ -506,7 +506,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.54112273, y: 2.2883778}
@@ -1041,13 +1041,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1483199092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba71d6a19122fa342ac7b43f194559b1, type: 3}
+  m_Script: {fileID: 11500000, guid: a4c836549b77de948b0a7d5cd40526e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enableSpawn: 1
   Enemy: {fileID: 1241407426426608, guid: b54b1b9b2ba167e45bf9d4551185f904, type: 2}
-  Enemy1: {fileID: 1241407426426608, guid: 54d3b47ce1c9b0344abcadbfbdaa97a7, type: 2}
-  Enemy2: {fileID: 1847637092868932, guid: 21676184f892ac14eb45e4714dc38b0d, type: 2}
+  Enemy1: {fileID: 1179467082694650, guid: 81c107cffea0cf64c8bfacd7f9f5ed37, type: 2}
+  Enemy2: {fileID: 1241407426426608, guid: 54d3b47ce1c9b0344abcadbfbdaa97a7, type: 2}
+  Enemy3: {fileID: 1847637092868932, guid: 21676184f892ac14eb45e4714dc38b0d, type: 2}
 --- !u!1 &1736659549
 GameObject:
   m_ObjectHideFlags: 0
